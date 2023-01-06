@@ -73,7 +73,7 @@ const MobileTopNavShow = ({}: { onOpen: () => void }) => {
       <Box mx={"1"} display={"flex"} alignItems="center">
         <Image
           alt={`logo of ${names.BLOCKCHAIN}`}
-          style={{ transform: "scale(1.2)", zIndex: "1" }}
+          style={{ transform: "scale(0.8)", zIndex: "1" }}
           width={24}
           height={24}
           src={names.BLOCKCHAIN_HEADER_IMAGE_URL}

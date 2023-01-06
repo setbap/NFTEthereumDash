@@ -120,9 +120,9 @@ const DesktopTopNav = () => {
     >
       <Box mx={"2"} display={"flex"} alignItems="center">
         <Image
-          alt="Near network image"
+          alt="Ethereum network image"
           style={{
-            transform: "scale(1)",
+            transform: "scale(0.8)",
             filter: "grayscale(0.2)",
             zIndex: "1",
           }}

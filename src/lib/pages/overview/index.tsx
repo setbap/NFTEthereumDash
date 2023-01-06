@@ -45,11 +45,11 @@ const NFT = ({
   return (
     <>
       <NextSeo
-        title={`Ethereum | Supply`}
+        title={`Ethereum | NFT`}
         description={`Track the latest stats and trends on ${names.BLOCKCHAIN}`}
         openGraph={{
           url: `https://${names.SITE_URL}/`,
-          title: `Ethereum  | Supply`,
+          title: `Ethereum  | NFT`,
           description: `Track the latest stats and trends on ${names.BLOCKCHAIN}`,
           images: [
             {

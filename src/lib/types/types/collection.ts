@@ -67,4 +67,5 @@ export interface CertainCollectionMarketplacesComparisonDailyAverage {
 export interface CollectionName {
     "Collection Name": string;
     "Image URL": string;
+    "Project Name": string
 }

@@ -69,10 +69,11 @@ const NFT = ({
       certainCollectionMarketplacesComparison.data,
     certainCollectionMarketplacesComparisonDailyAverage:
       certainCollectionMarketplacesComparisonDailyAverage.data,
-    collectionName: "ABC",
+    collectionName: "cryptopunks",
   });
 
-  const [nextSelectedCollection, setNextSelectedCollection] = useState("ABC");
+  const [nextSelectedCollection, setNextSelectedCollection] =
+    useState("cryptopunks");
 
   const query = useQuery(
     nextSelectedCollection,
@@ -174,9 +175,9 @@ const NFT = ({
 
             {collectionNames.data.map((name, index) => (
               <Button
-                onClick={() => submitAddress(name["Collection Name"])}
+                onClick={() => submitAddress(name["Project Name"])}
                 variant={
-                  name["Collection Name"] === pageData.collectionName
+                  name["Project Name"] === pageData.collectionName
                     ? "solid"
                     : "outline"
                 }

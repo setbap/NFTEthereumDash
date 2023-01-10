@@ -9,7 +9,7 @@ select
   count(distinct tx_hash) as "sales count"
 from ethereum.core.ez_nft_sales
 where 
-  project_name = 'cryptopunks' and 
+  project_name = '${collectionName}' and 
   price_usd is not null 
 group by 1
 ),
@@ -36,7 +36,7 @@ select
   count(distinct tx_hash) as "total sales count"
 from ethereum.core.ez_nft_sales
 where 
-  project_name = 'cryptopunks' and 
+  project_name = '${collectionName}' and 
   price_usd is not null 
 `
 export const getCertainCollectioncurrentValueAndChangeRatherThanYesterdayQuery = (collectionName: string) => `
@@ -62,7 +62,7 @@ select
   (("24h unique sellers" - "previous 24h unique sellers") / "previous 24h unique sellers") * 100 as "change (%) unique sellers"
 from ethereum.core.ez_nft_sales
 where 
-  project_name = 'cryptopunks' and 
+  project_name = '${collectionName}' and 
   price_usd is not null 
 group by 1
 )
@@ -91,7 +91,7 @@ select
   sum("sales count") over (order by "day") as "cum sales count"
 from ethereum.core.ez_nft_sales
 where 
-  project_name = 'cryptopunks' and 
+  project_name = '${collectionName}' and 
   price_usd is not null 
 group by 1
 ),
@@ -119,7 +119,7 @@ select
   count(distinct tx_hash) as "sales count"
 from ethereum.core.ez_nft_sales
 where 
-  project_name = 'cryptopunks' and 
+  project_name = '${collectionName}' and 
   price_usd is not null 
 group by 1
 `
@@ -137,7 +137,7 @@ select
   count(distinct tx_hash) as "sales count"
 from ethereum.core.ez_nft_sales
 where 
-  project_name = 'cryptopunks' and 
+  project_name = '${collectionName}' and 
   price_usd is not null 
 group by 1, 2
 ),

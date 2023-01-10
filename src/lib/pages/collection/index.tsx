@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Progress,
+  Select,
   SimpleGrid,
   Spinner,
   useToast,
@@ -134,19 +135,54 @@ const NFT = ({
         }}
       />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <Spinner
-          thickness="4px"
-          right="32px"
-          bottom="32px"
-          position="fixed"
-          size="xl"
-          emptyColor="gray.200"
-          color="red.500"
+        <Progress
           zIndex={"banner"}
-          visibility={query.isLoading ? "visible" : "hidden"}
+          position={"fixed"}
+          bottom={"0"}
+          height="8px"
+          width="full"
+          hasStripe
+          bg="transparent"
+          size={["sm", "md", "lg"]}
+          left={"0"}
+          colorScheme="red"
+          isIndeterminate={query.isLoading}
         />
+        <Box
+          zIndex={"banner"}
+          position={"fixed"}
+          bottom={["42px", "64px"]}
+          right={["12px", "32px"]}
+        >
+          <Select
+            border={"none"}
+            value={pageData.collectionName}
+            bg={names.BLOCKCHAIN_HEADER_GRADIENT}
+            onChange={(e) => submitAddress(e.target.value)}
+            size={["md", "lg"]}
+            borderRadius={"12px"}
+            color="#020202"
+            fontWeight={"bold"}
+          >
+            <optgroup
+              style={{ backgroundColor: "#eee", padding: "8px" }}
+              label="select collection"
+            >
+              {collectionNames.data.map((name, index) => (
+                <option
+                  color="white"
+                  style={{ backgroundColor: "#eee" }}
+                  value={name["Project Name"]}
+                  key={index}
+                >
+                  {name["Collection Name"]}
+                </option>
+              ))}
+            </optgroup>
+          </Select>
+        </Box>
         <HeaderSection isChildMarkdown={false} title="Ethereum NFT Collection">
-          <Wrap>
+          {/* <Wrap>
             <Progress
               width={"full"}
               left={-1}
@@ -186,7 +222,7 @@ const NFT = ({
                 {name["Collection Name"]}
               </Button>
             ))}
-          </Wrap>
+          </Wrap> */}
         </HeaderSection>
         <Box pt={"4"}></Box>
         <HeaderSection title="Glance">

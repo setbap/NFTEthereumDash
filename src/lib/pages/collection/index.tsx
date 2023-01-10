@@ -27,11 +27,11 @@ const colors = [
   "#03a9f4",
   "#ffc107",
   "#4caf50",
-  "#00bcd4",
-  "#f44336",
-  "#9c27b0",
-  "#673ab7",
   "#3f51b5",
+  "#9c27b0",
+  "#f44336",
+  "#673ab7",
+  "#00bcd4",
   "#2196f3",
   "#009688",
   "#607d8b",
@@ -449,13 +449,13 @@ according section defined in above, i prepare some of static about these topics.
             change={
               pageData
                 .certainCollectioncurrentValueAndChangeRatherThanYesterday[
-                "change (%) Unique sellers"
+                "change (%) unique sellers"
               ]
             }
             status={
               pageData
                 .certainCollectioncurrentValueAndChangeRatherThanYesterday[
-                "change (%) Unique sellers"
+                "change (%) unique sellers"
               ] >= 0
                 ? "inc"
                 : "dec"
@@ -628,7 +628,12 @@ according section defined in above, i prepare some of static about these topics.
               isNotDate
               modalInfo=""
               title={
-                certainCollectionMarketplacesComparisonDailyAverageNames[index]
+                certainCollectionMarketplacesComparisonDailyAverageNames[
+                  index
+                ] +
+                " [" +
+                pageData.collectionName +
+                "]"
               }
               baseSpan={1}
               dataKey="marketplace"
@@ -638,7 +643,7 @@ according section defined in above, i prepare some of static about these topics.
               labels={[
                 {
                   key: value,
-                  color: colors[2],
+                  color: colors[index],
                 },
               ]}
             />

@@ -26,7 +26,7 @@ export interface CertainCollectioncurrentValueAndChangeRatherThanYesterday {
     "change (%) unique buyers": 0,
     "24h unique sellers": 38,
     "Previous 24h Unique Sellers": 27,
-    "change (%) Unique sellers": 40.7407
+    "change (%) unique sellers": 40.7407
 }
 
 export interface CertainCollectionNFTSelling {

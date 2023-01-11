@@ -67,7 +67,11 @@ const NFT = ({
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
         <HeaderSection title="Ethereum NFT">
           {`
-Ethereum is an open-source blockchain that is well-suited to hosting and trading Non-Fungible Tokens (NFTs). NFTs are digital tokens that represent digital assets, such as artwork, collectibles, or even real-world items like tickets or concert passes. The Ethereum protocol enables developers to create, transfer, and trade NFTs in a secure and trustless fashion. It also offers scalability, low transaction fees, and fast transaction times. Ethereum has become a popular platform for the creation, trading, and collection of digital assets and NFTs, with many high-profile projects launching on the Ethereum blockchain.
+NFTs, or non-fungible tokens, have been around since the early days of Ethereum, but they only began to gain mainstream attention in 2017 with the launch of the CryptoPunks project.
+
+  
+
+The first Non Fungible Tokens (NFTs) were created on the Ethereum blockchain in 2017, when the ERC-721 standard was introduced. This standard allowed for the creation of unique digital assets that could be tracked, transferred and exchanged on the Ethereum blockchain. Since then, many other blockchains have adopted NFTs and created their own versions of the ERC-721 standard.
 `}
         </HeaderSection>
         <Box pt={"4"}></Box>

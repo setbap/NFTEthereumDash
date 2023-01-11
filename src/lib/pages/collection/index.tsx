@@ -181,48 +181,10 @@ const NFT = ({
             </optgroup>
           </Select>
         </Box>
-        <HeaderSection isChildMarkdown={false} title="Ethereum NFT Collection">
-          {/* <Wrap>
-            <Progress
-              width={"full"}
-              left={-1}
-              top={-1}
-              right={-1}
-              height={2}
-              position="absolute"
-              size="xs"
-              visibility={query.isLoading ? "visible" : "hidden"}
-              isIndeterminate={query.isLoading}
-            />
-            <Button
-              as={"a"}
-              variant={"link"}
-              textDecoration="underline"
-              rightIcon={
-                <FaExternalLinkAlt
-                  fontSize={"8px"}
-                  style={{ marginBottom: "6px", marginLeft: "-6px" }}
-                />
-              }
-              href={`https://app.flipsidecrypto.com/velocity/queries/${collectionNames.key}`}
-            >
-              {collectionNames.title} :
-            </Button>
-
-            {collectionNames.data.map((name, index) => (
-              <Button
-                onClick={() => submitAddress(name["Project Name"])}
-                variant={
-                  name["Project Name"] === pageData.collectionName
-                    ? "solid"
-                    : "outline"
-                }
-                key={index}
-              >
-                {name["Collection Name"]}
-              </Button>
-            ))}
-          </Wrap> */}
+        <HeaderSection title="Ethereum NFT Collection">
+          {`
+The purpose of this section is focusing on certain NFT collection on this network. Some of most popular collections listed here and you can choose one of them to see all metrics related to it.
+`}
         </HeaderSection>
         <Box pt={"4"}></Box>
         <HeaderSection title="Glance">

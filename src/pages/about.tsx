@@ -36,7 +36,7 @@ const About = () => {
         <Box position={"absolute"} bottom="8px" width={"100%"} px="8px">
           <HeaderSection title={"elSina"}>
             {`
-  __[Page Source | elSina(SETBAP)](https://github.com/setbap/MegaEthereumDash)__
+  __[Page Source | elSina(SETBAP)](https://github.com/setbap/nftethereumdash)__
 `}
           </HeaderSection>
         </Box>
